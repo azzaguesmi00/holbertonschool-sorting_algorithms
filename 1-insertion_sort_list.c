@@ -13,6 +13,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *t = *list, *swap, *j;
 
 	j = *list;
+
 	while (j)
 	{
 		t = j;
