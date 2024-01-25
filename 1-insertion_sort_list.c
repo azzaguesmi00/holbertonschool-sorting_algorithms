@@ -2,25 +2,6 @@
 #include <stdio.h>
 
 /**
- * swap-swaps 2 nodes
- * @a: address of the first node
- * @b: address of the second node
- *
- * Return: void
- */
-void swap(listint_t *a, listint_t *b)
-{
-	if (a->prev)
-		a->prev->n = b;
-	if (b->next)
-		b->next->prev = a;
-	a->next = b->next;
-	b->prev = a->prev;
-	a->prev = b;
-	b->next = a;
-}
-
-/**
  * insertion_sort_list- insertion sorts a doubly linked list
  * @list: address of pointer
  *
